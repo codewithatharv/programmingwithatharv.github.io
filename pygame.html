@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pygame</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        @media only screen and (max-width:325px) {
+            #ol h2 {
+                font-size: 6px;
+            }
+        }
+        
+        @media only screen and (max-width:325px) {
+            #ol a {
+                font-size: 6px;
+            }
+        }
+        
+        @media only screen and (max-width:325px) {
+            #h3 h3 {
+                font-size: 0.6rem;
+            }
+        }
+        
+        @media only screen and (max-width:325px) {
+            #h4 {
+                font-size: 0.6rem;
+            }
+        }
+        
+        @media only screen and (max-width:303px) {
+            #h4 {
+                font-size: 0.5rem;
+            }
+        }
+        
+        .p1 {
+            margin: 1.5%;
+            font-family: unset;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .p2 {
+            margin: 1%;
+            font-family: cursive;
+            font-weight: lighter;
+            font-size: 0.9rem;
+        }
+        
+        .h3 {
+            color: rgb(238, 130, 130);
+            font-size: 1.4rem;
+        }
+        
+        hr {
+            width: 45%;
+        }
+        
+        img {
+            width: 70%;
+        }
+        
+        .p3 {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h1">Pygame</h1>
+    <hr>
+    <h3 class="h3">Getting started</h3>
+    <p class="p2">Start pygame and draw some lines <br> The best way to understand how pygame works is to start it up and draw something. Open the Python Command Shell in IDLE to get started. Before we can use pygame in a program, we need to import it; enter the statement
+        below and press Enter: <br> >>> import pygame <br> Once we’ve imported the pygame module, we can start using the functions and classes it contains. The pygame framework needs to be set up before you can use it to display the items in your game.
+        A game program does this by calling the init function in the pygame module, as shown here: <br> >>> pygame.init() <br> When you press Enter, the init function sets up the different pygame elements, each of which performs a specific task when the
+        game is running. Elements read user input, make sounds, and so on. The init function returns a tuple that tells you how many elements have been successfully initialized, and how many have failed to initialize. If an element fails to initialize,
+        pygame might not have been installed correctly. However, most games ignore this value and assume that all is well. <br> >>> pygame.init() <br> (6, 0) <br> The display above shows that six modules have been set up correctly and that none have failed
+        to initialize. If you see any failures—in other words, if the second value in the tuple is any value other than zero—you should make sure that pygame has been properly installed. Next, we need to create a drawing surface. A drawing surface has
+        a specific size, which is set when we create it. The size is given in pixels (a pixel is the size of a dot on the display). The more pixels you have, the better quality the display. You also find pixel dimensions when talking about camera and
+        video screen resolution. We’ll use a screen size of 800 pixels wide and 600 pixels high. We can use a tuple to create a surface as follows: <br> >>> size = (800, 600) <br> Remember that a tuple is a way of grouping a number of items. You can find
+        out more about them in Chapter 8. Once we have the tuple that describes the size of the game screen, we can use this value as an argument to the function that creates a pygame drawing surface. <br> >>> surface = pygame.display.set_mode(size) <br>        This statement creates the drawing surface, sets the variable surface to refer to it, and then displays the surface on the screen. You should see the window below appear on your screen. <br>
+    </p>
+    <img src="../views/pygame.jpg" alt="pygame">
+    <p class="p2">You can change the title of the drawing window using the following function: <br> >>> pygame.display.set_caption('An awesome game by Rob') <br> This function changes the title of the window as shown below .</p>
+    <img src="../views/caption.jpg" alt="caption">
+    <hr>
+    <h3 class="h3">Basic structure</h3>
+    <img src="../views/basic-str.jpg" alt="basics">
+    <h3 class="h3">Coordinates</h3>
+    <img src="../views/coord.jpg" alt="coordinates">
+    <hr>
+    <h3 class="h3">Exercise</h3>
+    <img src="../views/pattern.jpg" alt="">
+    <h4>------result-------</h4>
+    <img src="../views/exercise.jpg" alt="">
+    <h3 class="h3">Loading image to pygame</h3>
+    <p class="p2">&nbsp;&nbsp;image=pygame.image.load("image path") <br> &nbsp;&nbsp;pos=(34,67) <br> &nbsp;&nbsp;surface.blit(image,pos)
+    </p>
+    <h3 class="h3">Moving image</h3>
+    <img src="../views/move.jpg" alt="">
+    <h3 class="h3">Adding sounds</h3>
+    <p class="p2"> sound=pygame.mixer.sound("full path") <br>sound.play() </p>
+    <h3 class="h3">Keyboard events</h3>
+    <img src="../views/key.jpg" alt="Keyboard events">
+    <h3 class="h3">Keys</h3>
+    <p class="p3">K_KP_MINUS keypad minus <br> K_KP_PLUS keypad plus <br> K_KP_ENTER keypad enter <br> K_KP_ENTER keypad enter <br> K_KP_EQUALS keypad equals <br> K_UP up arrow <br> K_DOWN down arrow <br> K_RIGHT right arrow <br> K_LEFT left arrow <br> K_INSERT insert<br>        K_HOME home<br> K_END end<br> K_PAGEUP page up<br> K_PAGEDOWN page down<br> K_F1 F1<br> K_F2 F2<br> K_F3 F3<br> K_F4 F4<br> K_F5 F5<br> K_F6 F6<br> K_F7 F7<br> K_F8 F8<br> K_F9 F9<br> K_F10 F10<br> K_F11 F11<br> K_F12 F12<br> K_F13 F13<br> K_F14
+        F14
+        <br> K_F15 F15<br> K_NUMLOCK numlock<br> K_CAPSLOCK capslock<br> K_SCROLLOCK scrollock<br> K_RSHIFT right shift<br> K_LSHIFT left shift<br> K_RCTRL right ctrl<br> K_LCTRL left ctrl<br> K_RALT right alt<br> K_LALT left alt<br> K_RMETA right meta
+        <br> K_LMETA left meta<br> K_LSUPER left windows key<br> K_RSUPER right windows key<br> K_MODE mode shift<br> K_HELP help<br> K_PRINT print screen<br> K_SYSREQ sysrq<br> K_BREAK break<br> K_MENU menu<br> K_POWER power<br> K_EURO euro<br>
+
+    </p>
+    <p class="p3">K_BACKSPACE&nbsp; \b&nbsp; backspace <br> K_TAB&nbsp; \t&nbsp; tab<br> K_CLEAR&nbsp; clear<br> K_RETURN&nbsp; \r&nbsp; return<br> K_PAUSE &nbsp;pause<br> K_ESCAPE &nbsp;^[&nbsp; escape<br> K_SPACE &nbsp;space<br> K_EXCLAIM&nbsp; !&nbsp; exclaim<br>        K_QUOTEDBL&nbsp; "&nbsp; quotedbl<br> K_HASH &nbsp;#&nbsp; hash<br> K_DOLLAR &nbsp;$&nbsp; dollar<br> K_AMPERSAND &nbsp;&&nbsp; ampersand<br> K_QUOTE&nbsp; quote<br> K_LEFTPAREN&nbsp; (&nbsp; left parenthesis<br> K_RIGHTPAREN&nbsp; )&nbsp; right
+        parenthesis
+        <br> K_ASTERISK&nbsp; *&nbsp; asterisk<br> K_PLUS &nbsp;+&nbsp; plus sign<br> K_COMMA &nbsp;,&nbsp;comma<br> K_MINUS&nbsp; - &nbsp;minus sign<br> K_PERIOD&nbsp; . &nbsp;period<br> K_SLASH &nbsp; / &nbsp; forward slash<br>
+    </p>
+    <h3 class="h3"> Display Text</h3>
+    <p class="p2">font = pygame.font.Font(None, 60) <br> text = font.render('hello world', True, (255,0,0)) <br> surface.blit(text, (0,0))</p>
+    <img src="../views/text.jpg" alt="text">
+    <p class="p2">after writting above code press up arrow ad see ,</p>
+    <img src="../views/text-r.jpg" alt="result">
+    <h3 style="display: flex; justify-content: center; align-items: center; color: blueviolet;">thanks</h3>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .p1 {
+            margin: 1.5%;
+            font-family: unset;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .p2 {
+            margin: 1%;
+            font-family: cursive;
+            font-weight: lighter;
+            font-size: 0.9rem;
+        }
+        
+        .h3 {
+            color: rgb(238, 130, 130);
+            font-size: 1.4rem;
+        }
+        
+        img {
+            width: 50%;
+            height: 10%;
+        }
+        
+        .cx {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h1">Python</h1>
+    <hr>
+    <p class="p1">Python is an easy to learn, powerful programming language. has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature,
+        make it an ideal language for scripting and rapid application development in many areas on most platforms</p>
+    <h3 class="h3">Getting started</h3>
+    <p class="p2">we can use python interpreter as a calculator,for this we have to type python in the command prompt and can do mathmatical operations for example --> </p>
+    <img src="../views/calculator.jpg" alt="hello">
+    <h3 class="h3">Data types</h3>
+    <p class="p2">
+        There are different types of data types in python :<br> int --> integer value. <br> float --> desimal value. <br> boolean --> yes or no value. <br> double --> desimal value.<br> char --> character value. <br> string --> string value. <br></p>
+    <h3 class="h3">Comments</h3>
+    <p class="p2">
+        you can make single line comment by using ' # ' in front of the line. <br> you can make multi line comment by using " ''' " in front of the line and at end.
+    </p>
+    <h3 class="h3">Operators</h3>
+    <p class="p2">
+        and --> act as and <br> or --> act as or <br> + --> addition <br> - --> substraction <br> * --> multiply <br> / --> divide <br> = --> equals to <br> += --> increasement rapidly
+    </p>
+    <h3 class="h3">For Loops</h3>
+    <p class="p2">Now we’re ready for some more involved programming constructions. The basic technique for writing a loop is illustrated by the following example, which prints out the integers from 0 through 9: <br>
+        <br>
+    </p>
+    <img src="../views/for.jpg" alt="hello">
+    <h3 class="h3">While Loops</h3>
+    <img src="../views/while.jpg" alt="hello">
+    <h3 class="h3">F string</h3>
+    <p class="p2">The syntax is : <br> f" the content {variable is written} is written" <br>
+        <br> Some string functions are-->
+        <br> &nbsp;&nbsp;&nbsp; endswith() <br> &nbsp;&nbsp;&nbsp; upper() <br> &nbsp;&nbsp;&nbsp; capitalize() <br>
+    </p>
+    <h3 class="h3">List</h3>
+    <p class="p2">
+        &nbsp;&nbsp;&nbsp;syntax--> <br> &nbsp;&nbsp;&nbsp;listname = ["values" , "values" , "values"]
+    </p>
+    <h3 class="h3">Dictionaries</h3>
+    <p class="p2">
+        &nbsp;&nbsp;&nbsp;syntax--> <br> &nbsp;&nbsp;&nbsp; dictionary name = {"Key":"value" , "Key":"value"}
+    </p>
+    <h3 class="h3">Sets</h3>
+    <p class="p2">
+        &nbsp;&nbsp;&nbsp;syntax--> <br> &nbsp;&nbsp;&nbsp; set name = (values)
+    </p>
+    <h3 class="h3">Functions</h3>
+    <p class="p2">This is how you can make functions</p>
+    <img src="../views/function.jpg" alt="function making">
+    <h3 class="h3">Exception</h3>
+    <p class="p2">&nbsp;&nbsp;&nbsp;&nbsp;syntax--> <br> &nbsp;&nbsp;&nbsp;&nbsp;try: <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("hey") <br> &nbsp;&nbsp;&nbsp;&nbsp;except Exception as e: <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(e)
+    </p>
+    <h3 class="h3">File IO</h3>
+    <p class="p2">"r" --> reading <br>"w" --> writting <br>"x" --> creating file <br>"a" --> adding content to file <br>"t" --> text mode <br>"b" --> binary mode <br></p>
+    <p class="p2"> <br> <br> To open file --> open() <br> &nbsp;&nbsp;&nbsp; f = open("filename.txt") <br> &nbsp;&nbsp;&nbsp; c = f.read() <br> &nbsp;&nbsp;&nbsp;print(f) <br> &nbsp;&nbsp;&nbsp;f.close() <br> <br> To read a line --> <br> &nbsp;&nbsp;&nbsp; f = open("filename.txt"
+        , "rt") <br> &nbsp;&nbsp;&nbsp;print(f.readline()) <br> &nbsp;&nbsp;&nbsp;f.close()
+    </p>
+    <p class="p2">To write in a file <br> <br> &nbsp;&nbsp;&nbsp;&nbsp;f= open("filename" , "w") <br> &nbsp;&nbsp;&nbsp;&nbsp; f.write("the text to write") <br> &nbsp;&nbsp;&nbsp;&nbsp;f.close() <br> <br> <br> it create a file and add text to it , if you want to add
+        text in existing file then use "a" mode in place of "w" and name that file in which you want to add text.
+        <h1 style="color: blueviolet;">Some exercises :</h1>
+        <img src="../views/time.jpg" alt="time --> 10:23:234 "> <br>
+        <h1 style="color: blueviolet;">To print random number :</h1>
+        <img src="../views/random.jpg" alt="404 error ">
+        <h3 class="h3">Lambda</h3>
+        <p class="p2"> this is the way to write function in one line --> <br> &nbsp;&nbsp;&nbsp;&nbsp; minus = lambda x,y : x-y <br> &nbsp;&nbsp;&nbsp;&nbsp; print(minus)</p>
+        <h3 class="h3">Filter and Reduce functions</h3>
+        <p class="p2"> filter function --> <br> &nbsp;&nbsp;&nbsp;&nbsp;l=[1,2,3,4,5,6] <br> &nbsp;&nbsp;&nbsp;&nbsp;def greater(num): <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return num>5 <br> a= list(filter(greater , l)) <br> print(a) <br>
+            <br> it will return 6 <br>
+            <br> Reduce function --> <br> &nbsp;&nbsp;&nbsp;&nbsp;from functools import reduce <br> &nbsp;&nbsp;&nbsp;&nbsp;list = [1,,3,4,5,6] <br> &nbsp;&nbsp;&nbsp;&nbsp;num = reduce(lambda x,y : x+y , list) <br> &nbsp;&nbsp;&nbsp;&nbsp;print(num)
+            <br>
+        </p>
+        <h3 class="h3">Decorators</h3>
+        <p class="p2">if we want to take a function as an argument to another function the we use decorators , we will study further about them .<br>
+        </p> <br>
+        <h3 class="h3">Object oriented programming</h3>
+        <img src="../views/class1.jpg" alt="classes and object">
+        <h3 class="h3">constructors</h3>
+        <img src="../views/class2.jpg" alt="constructors">
+        <h3 class="h3">static methords</h3>
+        <p class="p2">static methord do not take self or cls as argument --> <br> &nbsp;&nbsp;&nbsp;&nbsp;@staticmethord <br> &nbsp;&nbsp;&nbsp;&nbsp;def cwa(string): <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("hey"+string) <br>
+        </p>
+        <h3 class="h3">Inheritence</h3>
+        <img src="../views/inherit.jpg" alt="Inheritence">
+        <h3 class="h3">Setters and getters</h3>
+        <img src="../views/property.jpg" alt="property decorators">
+        <p class="p2">some functions to inspect object : <br> type() --> give the type of object <br> dir() --> give a list of function you can use with object <br> Example --> <br> print(dir(cwa)) --> give various functions
+        </p>
+        <h3 class="h3">Generator & Iterators</h3>
+        <p class="p2">Generators</p>
+        <img src="../views/gen.jpg" alt="Generators">
+        <p class="p2">Iterators</p>
+        <img src="../views/iter.jpg" alt="Iterators">
+        <h3 class="h3">List , dictionary ,Sets comprehensions</h3>
+        <p class="p2">comprehensions means simplifing.</p>
+        <img src="../views/comp.jpg" alt="comprehensions">
+        <h3 class="h3">Using else with for loop</h3>
+        <p class="p2">l=["a","b","c"] <br> &nbsp;&nbsp;for item in l: <br> &nbsp;&nbsp;&nbsp;print(item) <br> &nbsp;&nbsp;else: <br>&nbsp;&nbsp;&nbsp;print("ended")</p>
+        <p class="p2">Return --> <br> <br> a <br> b <br> c <br> ended</p>
+        <h class="h3">To sleep </h>
+        <p class="p2">&nbsp;&nbsp;import time <br> &nbsp;&nbsp;time.sleep(1) --> sleep for one second</p>
+        <h class="h3">OS Module</h>
+        <p class="p2">To get current directory --> <br>&nbsp;&nbsp;import os <br>&nbsp;&nbsp;print(os.getcwd())</p>
+        <p class="p2">To change directory --> <br>&nbsp;&nbsp;import os <br>&nbsp;&nbsp;os.chdir("c://"))</p>
+        <p class="p2">To make folder --> <br>&nbsp;&nbsp;import os <br>&nbsp;&nbsp;os.mkdir("cwa")</p>
+        <p class="p2">To make many folder --> <br>&nbsp;&nbsp;import os <br>&nbsp;&nbsp;os.makedirs("cwa1/cwa2")</p>
+        <h3 class="h3">is and ==</h3>
+        <p class="p2">== shows value equality</p>
+        <p class="p2">is shows reference equality</p>
+        <h3 class="h3">cx_freeze</h3>
+        <p class="p2">This is the module to convert .py inyo exe</p>
+        <img class="cx" src="../views/cx.jpg" alt="cx_freeze">
+        <p class="p2">First off all open a folder named setup.py to same directory where your .py file is held and then write following code to setup.py</p>
+        <p class="p2">
+            from cx_Freeze import setup , Executable <br> setup(name = "Game" , --> write any name<br> &nbsp;&nbsp; version = "0.1" , --> write any version<br> &nbsp;&nbsp;description = "This is a fantastic game" , --> write any description <br> &nbsp;&nbsp;
+            executables = [Executable(r"E:\python_project\main\__main__.py")] -->write the path of your .py file <br> )
+            <p class="p2">after this <br> open cmd to the directory where all the files are held,and type <br> python setup.py build</p>
+            <h3 style="display: flex; justify-content: center; align-items: center; color: blueviolet;">thanks</h3>
+
+
+
+</body>
+
+</html>

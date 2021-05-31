@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithAtharv</title>
+    <style>
+        body {
+            background-color: #cad1e8;
+            opacity: 0.7;
+            z-index: -1;
+        }
+        
+        @media only screen and (max-width:500px) {
+            body #h3 {
+                font-size: 12px;
+            }
+        }
+        
+        @media only screen and (max-width:500px) {
+            #dow a {
+                font-size: 10px;
+            }
+        }
+        
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        #h3 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: blueviolet;
+            font-weight: lighter;
+            font-size: 17px;
+            font-family: cursive;
+            padding: 1%;
+            color: rgb(240, 232, 200);
+        }
+        
+        #dow {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-weight: lighter;
+            font-size: 18px;
+        }
+        
+        #dow li {
+            width: 25%;
+            background-color: dimgrey;
+            border-radius: 25px;
+            padding: 1% 3%;
+            margin: 1%;
+        }
+        
+        #dow li a:hover {
+            width: 25%;
+            background-color: rgb(253, 253, 253);
+            border-radius: 25px;
+            padding: 1% 10%;
+            margin: 1%;
+            color: grey;
+        }
+        
+        #dow li a {
+            color: ghostwhite;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="h3">Download links for mostly used programming stuff </h3>
+    <hr>
+    <div id="dow">
+        <li class="li"><a href="https://python.org">Python</a></li>
+        <li class="li"><a href="">minGW </a></li>
+        <li class="li"><a href="">jdk </a></li>
+        <li class="li"><a href="">jre</a></li>
+        <li class="li"><a href="">xampp</a></li>
+        <li class="li"><a href="">mongoDB</a></li>
+        <li class="li"><a href="">node js</a></li>
+    </div>
+</body>
+
+</html>
